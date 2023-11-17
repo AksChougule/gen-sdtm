@@ -1,0 +1,7 @@
+,PATID,CMTRT,CMDOSFRQ,CMDOSU,CMSTDTC,CMENDTC
+0,P00001,Aspirin,Three times daily,g,2022-12-16,2023-11-10
+1,P00002,Aspirin,Twice daily,mg,2023-02-22,2023-11-05
+2,P00003,Simvastatin,Twice daily,mg,2022-11-27,2023-11-07
+3,P00004,Simvastatin,Once daily,g,2023-08-05,2023-10-18
+4,P00005,Simvastatin,Once daily,mg,2023-05-16,2023-11-06
+5,P00006,Amlodipine,Once daily,mg,2023-05-18,2023-10-19

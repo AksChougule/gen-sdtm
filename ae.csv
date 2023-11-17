@@ -1,0 +1,25 @@
+,PATID,AETERM,AESEV,AESTDTC,AEENDTC,AETOXGR,AEOUT,AEACT,AESER,AESDTH
+0,P00001,Dizziness,Moderate,2023-07-23,2023-08-04,Grade 2,Recovered,Drug withdrawn,N,Y
+1,P00001,Rash,Mild,2022-12-13,2022-12-14,Grade 3,Improving,Dose not changed,N,Y
+2,P00001,Fever,Severe,2023-06-22,2023-07-09,Grade 2,Unchanged,Dose reduced,N,Y
+3,P00001,Nausea,Mild,2023-09-10,2023-10-06,Grade 1,Recovered,Dose not changed,N,Y
+4,P00001,Nausea,Mild,2023-02-21,2023-02-25,Grade 3,Unchanged,Dose reduced,Y,N
+5,P00002,Rash,Severe,2023-01-17,2023-01-18,Grade 1,Recovered,Drug withdrawn,N,Y
+6,P00002,Headache,Severe,2023-08-22,2023-09-19,Grade 3,Worsened,Dose not changed,N,Y
+7,P00002,Fatigue,Severe,2023-01-16,2023-01-26,Grade 4,Unchanged,Dose reduced,N,N
+8,P00002,Fatigue,Moderate,2023-06-25,2023-07-13,Grade 2,Unchanged,Dose reduced,N,Y
+9,P00003,Dizziness,Mild,2023-01-07,2023-01-17,Grade 3,Death,Drug withdrawn,N,Y
+10,P00003,Fever,Severe,2022-11-21,2022-12-06,Grade 1,Recovered,Drug withdrawn,N,Y
+11,P00003,Headache,Severe,2022-12-23,2023-01-01,Grade 3,Worsened,Drug withdrawn,N,N
+12,P00003,Fatigue,Mild,2022-12-25,2023-01-17,Grade 4,Death,Dose reduced,N,Y
+13,P00003,Fever,Mild,2023-09-20,2023-10-14,Grade 1,Worsened,Drug withdrawn,Y,N
+14,P00004,Fatigue,Moderate,2023-09-26,2023-10-25,Grade 3,Unchanged,Drug withdrawn,Y,Y
+15,P00004,Nausea,Severe,2023-01-01,2023-01-19,Grade 4,Worsened,Drug withdrawn,Y,Y
+16,P00005,Fever,Severe,2023-02-06,2023-02-14,Grade 3,Recovered,Dose reduced,N,Y
+17,P00005,Fever,Mild,2023-08-27,2023-09-22,Grade 3,Unchanged,Dose reduced,Y,Y
+18,P00005,Fever,Severe,2022-12-21,2023-01-01,Grade 1,Recovered,Drug withdrawn,Y,N
+19,P00006,Headache,Moderate,2023-08-05,2023-08-28,Grade 3,Worsened,Dose reduced,N,N
+20,P00006,Nausea,Moderate,2023-04-09,2023-05-02,Grade 3,Death,Dose reduced,N,N
+21,P00006,Rash,Severe,2023-09-06,2023-09-20,Grade 1,Worsened,Dose reduced,Y,N
+22,P00006,Fever,Moderate,2023-08-04,2023-08-19,Grade 2,Improving,Dose not changed,N,N
+23,P00006,Fatigue,Mild,2023-03-11,2023-03-26,Grade 3,Death,Dose reduced,N,Y

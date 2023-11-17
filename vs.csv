@@ -1,0 +1,97 @@
+,PATID,VSTESTCD,VSORRES,VSSTDTC,VISIT
+0,P00001,Heart Rate,90,2023-01-18,Visit 1
+1,P00001,Blood Pressure,67,2023-06-25,Visit 1
+2,P00001,Respiratory Rate,82,2023-07-05,Visit 1
+3,P00001,Temperature,68,2023-02-02,Visit 1
+4,P00001,Heart Rate,84,2023-09-25,Visit 2
+5,P00001,Blood Pressure,79,2023-02-22,Visit 2
+6,P00001,Respiratory Rate,67,2023-05-11,Visit 2
+7,P00001,Temperature,100,2023-03-05,Visit 2
+8,P00001,Heart Rate,72,2023-10-07,Visit 3
+9,P00001,Blood Pressure,66,2023-09-07,Visit 3
+10,P00001,Respiratory Rate,73,2023-07-16,Visit 3
+11,P00001,Temperature,92,2023-07-18,Visit 3
+12,P00001,Heart Rate,63,2023-01-07,Visit 4
+13,P00001,Blood Pressure,83,2023-07-26,Visit 4
+14,P00001,Respiratory Rate,89,2023-10-05,Visit 4
+15,P00001,Temperature,77,2023-10-08,Visit 4
+16,P00002,Heart Rate,100,2023-05-04,Visit 1
+17,P00002,Blood Pressure,93,2023-02-22,Visit 1
+18,P00002,Respiratory Rate,90,2023-06-11,Visit 1
+19,P00002,Temperature,65,2023-11-11,Visit 1
+20,P00002,Heart Rate,68,2022-12-12,Visit 2
+21,P00002,Blood Pressure,98,2022-12-12,Visit 2
+22,P00002,Respiratory Rate,75,2023-05-11,Visit 2
+23,P00002,Temperature,71,2023-08-17,Visit 2
+24,P00002,Heart Rate,62,2023-10-06,Visit 3
+25,P00002,Blood Pressure,64,2023-02-03,Visit 3
+26,P00002,Respiratory Rate,84,2023-10-03,Visit 3
+27,P00002,Temperature,61,2023-03-21,Visit 3
+28,P00002,Heart Rate,90,2023-01-26,Visit 4
+29,P00002,Blood Pressure,83,2023-02-14,Visit 4
+30,P00002,Respiratory Rate,84,2023-04-09,Visit 4
+31,P00002,Temperature,98,2023-08-05,Visit 4
+32,P00003,Heart Rate,72,2023-04-18,Visit 1
+33,P00003,Blood Pressure,93,2022-11-17,Visit 1
+34,P00003,Respiratory Rate,95,2023-10-24,Visit 1
+35,P00003,Temperature,100,2023-01-08,Visit 1
+36,P00003,Heart Rate,80,2023-03-24,Visit 2
+37,P00003,Blood Pressure,78,2022-12-15,Visit 2
+38,P00003,Respiratory Rate,81,2023-11-07,Visit 2
+39,P00003,Temperature,91,2023-06-09,Visit 2
+40,P00003,Heart Rate,61,2023-04-24,Visit 3
+41,P00003,Blood Pressure,71,2023-01-06,Visit 3
+42,P00003,Respiratory Rate,99,2022-11-25,Visit 3
+43,P00003,Temperature,65,2023-08-16,Visit 3
+44,P00003,Heart Rate,90,2023-10-24,Visit 4
+45,P00003,Blood Pressure,72,2022-12-11,Visit 4
+46,P00003,Respiratory Rate,92,2023-07-02,Visit 4
+47,P00003,Temperature,83,2023-08-29,Visit 4
+48,P00004,Heart Rate,69,2022-12-18,Visit 1
+49,P00004,Blood Pressure,74,2023-08-26,Visit 1
+50,P00004,Respiratory Rate,80,2022-11-19,Visit 1
+51,P00004,Temperature,71,2023-06-28,Visit 1
+52,P00004,Heart Rate,71,2023-04-03,Visit 2
+53,P00004,Blood Pressure,77,2023-09-21,Visit 2
+54,P00004,Respiratory Rate,62,2022-12-19,Visit 2
+55,P00004,Temperature,94,2023-07-31,Visit 2
+56,P00004,Heart Rate,62,2022-12-02,Visit 3
+57,P00004,Blood Pressure,65,2023-08-05,Visit 3
+58,P00004,Respiratory Rate,87,2023-04-28,Visit 3
+59,P00004,Temperature,93,2023-07-20,Visit 3
+60,P00004,Heart Rate,61,2023-05-21,Visit 4
+61,P00004,Blood Pressure,87,2023-05-08,Visit 4
+62,P00004,Respiratory Rate,84,2023-10-09,Visit 4
+63,P00004,Temperature,85,2022-11-23,Visit 4
+64,P00005,Heart Rate,76,2023-06-06,Visit 1
+65,P00005,Blood Pressure,86,2023-05-19,Visit 1
+66,P00005,Respiratory Rate,81,2023-03-14,Visit 1
+67,P00005,Temperature,61,2023-01-20,Visit 1
+68,P00005,Heart Rate,83,2023-03-08,Visit 2
+69,P00005,Blood Pressure,83,2023-09-22,Visit 2
+70,P00005,Respiratory Rate,67,2023-01-26,Visit 2
+71,P00005,Temperature,88,2023-08-29,Visit 2
+72,P00005,Heart Rate,80,2023-02-02,Visit 3
+73,P00005,Blood Pressure,81,2023-05-13,Visit 3
+74,P00005,Respiratory Rate,76,2023-06-02,Visit 3
+75,P00005,Temperature,62,2023-01-04,Visit 3
+76,P00005,Heart Rate,100,2023-07-11,Visit 4
+77,P00005,Blood Pressure,97,2023-01-13,Visit 4
+78,P00005,Respiratory Rate,85,2022-11-25,Visit 4
+79,P00005,Temperature,75,2023-11-12,Visit 4
+80,P00006,Heart Rate,62,2023-10-18,Visit 1
+81,P00006,Blood Pressure,64,2023-03-08,Visit 1
+82,P00006,Respiratory Rate,66,2023-03-06,Visit 1
+83,P00006,Temperature,80,2023-03-17,Visit 1
+84,P00006,Heart Rate,94,2023-07-30,Visit 2
+85,P00006,Blood Pressure,93,2023-06-19,Visit 2
+86,P00006,Respiratory Rate,96,2023-10-09,Visit 2
+87,P00006,Temperature,87,2023-09-05,Visit 2
+88,P00006,Heart Rate,90,2023-01-03,Visit 3
+89,P00006,Blood Pressure,96,2023-04-30,Visit 3
+90,P00006,Respiratory Rate,64,2023-09-16,Visit 3
+91,P00006,Temperature,70,2023-04-14,Visit 3
+92,P00006,Heart Rate,71,2023-04-14,Visit 4
+93,P00006,Blood Pressure,96,2023-05-24,Visit 4
+94,P00006,Respiratory Rate,82,2022-12-27,Visit 4
+95,P00006,Temperature,69,2023-07-03,Visit 4

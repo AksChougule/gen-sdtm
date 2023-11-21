@@ -1,3 +1,8 @@
+"""
+This is a list of function which can generate synthetic, low-fidelity CDISC SDTM Data
+for individual domains or for all at once.
+"""
+
 import pandas as pd
 import numpy as np
 import random
@@ -68,41 +73,6 @@ def create_sdtm_conmed(num_patients):
 	return CM
 
 
-"""
-def create_sdtm_vital_signs2(num_patients, num_visits):
-	""
-	Create a fake CDISC SDTM dataset for vital signs with multiple visits per patient.
-
-	Parameters:
-	num_patients (int): The number of patients.
-	num_visits (int): The number of visits per patient.
-
-	Returns:
-	pd.DataFrame: A dataframe with vital signs data.
-	""
-	# Constants for the dataset
-	vital_signs = ['Heart Rate', 'Blood Pressure', 'Respiratory Rate', 'Temperature']
-
-	# Generating data
-	data = {'PATID': [], 'VSTESTCD': [], 'VSORRES': [], 'VSSTDTC': [], 'VISIT': []}
-
-	for i in range(1, num_patients + 1):
-    	pat_id = f'P{str(i).zfill(5)}'
-    	for visit_num in range(1, num_visits + 1):
-        	visit_name = f'Visit {visit_num}'
-        	for sign in vital_signs:
-            	data['PATID'].append(pat_id)
-            	data['VSTESTCD'].append(sign)
-            	data['VSORRES'].append(random.randint(60, 100))  # Random value for the vital sign
-            	data['VSSTDTC'].append((datetime.now() - timedelta(days=random.randint(0, 365))).date())
-            	data['VISIT'].append(visit_name)
-
-	# Creating DataFrame
-	VS = pd.DataFrame(data)
-
-	return VS
-
-"""
 
 def create_sdtm_vital_signs(num_patients, num_visits):
     """
@@ -289,3 +259,77 @@ def create_sdtm_response(num_patients):
     return RS
 
 
+def save_sdtm_data(num_patients, num_visits=5):
+    """
+    Create and save low-fidelity synthetic CDISC SDTM dataset for 7 common domains.
+
+    Parameters:
+    num_patients (int): The number of patients.
+    num_rows (int): The number of visits per patient
+
+    Returns:
+    NA
+    """
+    # create adverse events
+    ae = create_sdtm_adverse_events(num_patients)
+    ae.to_csv("ae.csv")
+
+    # create concomitant medication
+    cm = create_sdtm_conmed(num_patients)
+    cm.to_csv("cm.csv")
+
+    # create demographics
+    dm = create_sdtm_demographics(num_patients)
+    dm.to_csv("dm.csv")
+
+    # create exposure data
+    ex = create_sdtm_exposure(num_patients)
+    ex.to_csv("ex.csv")
+
+    # create lab analytes
+    lb = create_sdtm_lab_analytes(num_patients, num_visits)
+    lb.to_csv("lb.csv")
+
+    # create vital signs
+    vs = create_sdtm_vital_signs(num_patients, num_visits)
+    vs.to_csv("vs.csv")
+
+    # create response data
+    rs = create_sdtm_response(num_patients)
+    rs.to_csv("rs.csv")
+
+
+def get_sdtm_data(num_patients, num_visits=5):
+    """
+    Create a fake CDISC SDTM dataset for 7 common domains.
+
+    Parameters:
+    num_patients (int): The number of patients.
+    num_rows (int): The number of visits per patient
+   
+    Returns:
+    Dictionary of pandas df, each df is associated with a domain
+    """
+    # create adverse events
+    ae = create_sdtm_adverse_events(num_patients)
+
+    # create concomitant medication
+    cm = create_sdtm_conmed(num_patients)
+
+    # create demographics
+    dm = create_sdtm_demographics(num_patients)
+
+    # create exposure data
+    ex = create_sdtm_exposure(num_patients)
+
+    # create lab analytes
+    lb = create_sdtm_lab_analytes(num_patients, num_visits)
+
+    # create vital signs
+    vs = create_sdtm_vital_signs(num_patients, num_visits)
+
+    # create response data
+    rs = create_sdtm_response(num_patients)
+    
+    data = {'ae':ae,'cm':cm,'dm':dm,'ex':ex,'lb':lb,'vs':vs,'rs':rs}
+    return data

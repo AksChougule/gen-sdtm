@@ -1,0 +1,291 @@
+USUBJID,TUSEQ,TULOC,TUMETHOD
+P00001,1,Bone,MRI
+P00001,2,Liver,MRI
+P00001,3,Bone,MRI
+P00001,4,Lung,Ultrasound
+P00001,5,Brain,MRI
+P00002,1,Liver,Ultrasound
+P00002,2,Brain,CT Scan
+P00002,3,Liver,CT Scan
+P00003,1,Lung,Ultrasound
+P00004,1,Liver,CT Scan
+P00004,2,Brain,MRI
+P00004,3,Lung,CT Scan
+P00005,1,Brain,Ultrasound
+P00005,2,Liver,Ultrasound
+P00006,1,Brain,MRI
+P00007,1,Liver,MRI
+P00007,2,Liver,MRI
+P00007,3,Brain,MRI
+P00007,4,Bone,CT Scan
+P00007,5,Bone,CT Scan
+P00008,1,Bone,MRI
+P00008,2,Liver,CT Scan
+P00008,3,Bone,MRI
+P00009,1,Brain,MRI
+P00009,2,Lung,CT Scan
+P00010,1,Brain,MRI
+P00010,2,Liver,CT Scan
+P00010,3,Lung,CT Scan
+P00010,4,Bone,CT Scan
+P00011,1,Bone,MRI
+P00011,2,Brain,CT Scan
+P00011,3,Lung,MRI
+P00011,4,Lung,MRI
+P00011,5,Brain,Ultrasound
+P00012,1,Bone,CT Scan
+P00012,2,Lung,CT Scan
+P00013,1,Liver,CT Scan
+P00014,1,Lung,MRI
+P00014,2,Lung,CT Scan
+P00014,3,Lung,Ultrasound
+P00014,4,Brain,Ultrasound
+P00015,1,Brain,Ultrasound
+P00015,2,Bone,MRI
+P00015,3,Bone,MRI
+P00015,4,Liver,Ultrasound
+P00015,5,Brain,CT Scan
+P00016,1,Liver,Ultrasound
+P00017,1,Bone,CT Scan
+P00018,1,Bone,CT Scan
+P00019,1,Liver,MRI
+P00019,2,Brain,Ultrasound
+P00019,3,Liver,Ultrasound
+P00020,1,Bone,CT Scan
+P00020,2,Liver,MRI
+P00021,1,Bone,MRI
+P00021,2,Brain,MRI
+P00021,3,Lung,MRI
+P00021,4,Liver,MRI
+P00022,1,Brain,CT Scan
+P00022,2,Lung,CT Scan
+P00023,1,Bone,MRI
+P00024,1,Liver,CT Scan
+P00024,2,Bone,Ultrasound
+P00025,1,Brain,CT Scan
+P00026,1,Brain,Ultrasound
+P00026,2,Lung,MRI
+P00026,3,Bone,CT Scan
+P00026,4,Liver,MRI
+P00027,1,Brain,MRI
+P00027,2,Liver,MRI
+P00027,3,Brain,MRI
+P00027,4,Lung,CT Scan
+P00028,1,Liver,Ultrasound
+P00028,2,Liver,CT Scan
+P00029,1,Bone,CT Scan
+P00030,1,Liver,Ultrasound
+P00030,2,Bone,Ultrasound
+P00030,3,Lung,MRI
+P00031,1,Liver,CT Scan
+P00031,2,Liver,MRI
+P00031,3,Bone,Ultrasound
+P00031,4,Brain,CT Scan
+P00031,5,Liver,CT Scan
+P00032,1,Lung,MRI
+P00032,2,Bone,CT Scan
+P00032,3,Bone,MRI
+P00032,4,Lung,MRI
+P00032,5,Bone,Ultrasound
+P00033,1,Lung,CT Scan
+P00033,2,Bone,MRI
+P00033,3,Liver,MRI
+P00033,4,Lung,Ultrasound
+P00034,1,Lung,Ultrasound
+P00034,2,Liver,CT Scan
+P00034,3,Lung,MRI
+P00034,4,Brain,MRI
+P00035,1,Bone,Ultrasound
+P00035,2,Bone,MRI
+P00036,1,Brain,MRI
+P00036,2,Bone,MRI
+P00037,1,Brain,CT Scan
+P00037,2,Lung,Ultrasound
+P00037,3,Brain,MRI
+P00038,1,Lung,Ultrasound
+P00038,2,Lung,Ultrasound
+P00038,3,Liver,Ultrasound
+P00038,4,Liver,CT Scan
+P00038,5,Brain,CT Scan
+P00039,1,Lung,CT Scan
+P00039,2,Brain,MRI
+P00039,3,Liver,Ultrasound
+P00040,1,Liver,MRI
+P00041,1,Bone,Ultrasound
+P00041,2,Brain,Ultrasound
+P00041,3,Lung,MRI
+P00042,1,Liver,Ultrasound
+P00042,2,Lung,CT Scan
+P00043,1,Bone,MRI
+P00043,2,Lung,Ultrasound
+P00043,3,Liver,MRI
+P00044,1,Bone,CT Scan
+P00044,2,Bone,Ultrasound
+P00044,3,Brain,Ultrasound
+P00044,4,Bone,Ultrasound
+P00044,5,Lung,MRI
+P00045,1,Liver,CT Scan
+P00045,2,Lung,Ultrasound
+P00046,1,Brain,MRI
+P00046,2,Liver,Ultrasound
+P00046,3,Lung,MRI
+P00046,4,Brain,CT Scan
+P00047,1,Bone,Ultrasound
+P00047,2,Brain,MRI
+P00047,3,Bone,MRI
+P00048,1,Brain,CT Scan
+P00048,2,Lung,Ultrasound
+P00049,1,Lung,Ultrasound
+P00049,2,Bone,MRI
+P00049,3,Bone,CT Scan
+P00049,4,Brain,CT Scan
+P00049,5,Lung,Ultrasound
+P00050,1,Lung,Ultrasound
+P00050,2,Lung,MRI
+P00051,1,Lung,Ultrasound
+P00051,2,Liver,Ultrasound
+P00051,3,Brain,CT Scan
+P00051,4,Bone,CT Scan
+P00051,5,Bone,Ultrasound
+P00052,1,Liver,MRI
+P00052,2,Bone,MRI
+P00052,3,Brain,CT Scan
+P00052,4,Lung,Ultrasound
+P00053,1,Liver,CT Scan
+P00053,2,Bone,CT Scan
+P00053,3,Lung,Ultrasound
+P00054,1,Liver,CT Scan
+P00055,1,Lung,MRI
+P00056,1,Brain,CT Scan
+P00056,2,Brain,Ultrasound
+P00056,3,Lung,MRI
+P00056,4,Bone,Ultrasound
+P00056,5,Brain,MRI
+P00057,1,Brain,CT Scan
+P00058,1,Lung,Ultrasound
+P00059,1,Brain,MRI
+P00060,1,Lung,MRI
+P00060,2,Liver,MRI
+P00061,1,Liver,CT Scan
+P00061,2,Bone,CT Scan
+P00061,3,Bone,MRI
+P00062,1,Lung,CT Scan
+P00062,2,Bone,MRI
+P00062,3,Lung,CT Scan
+P00062,4,Liver,CT Scan
+P00063,1,Liver,Ultrasound
+P00063,2,Lung,MRI
+P00063,3,Bone,CT Scan
+P00063,4,Liver,MRI
+P00064,1,Brain,Ultrasound
+P00064,2,Bone,CT Scan
+P00064,3,Bone,MRI
+P00065,1,Brain,CT Scan
+P00065,2,Bone,Ultrasound
+P00065,3,Lung,MRI
+P00065,4,Liver,CT Scan
+P00065,5,Bone,CT Scan
+P00066,1,Liver,Ultrasound
+P00066,2,Liver,Ultrasound
+P00067,1,Bone,CT Scan
+P00067,2,Liver,CT Scan
+P00067,3,Brain,MRI
+P00068,1,Bone,CT Scan
+P00068,2,Brain,MRI
+P00068,3,Lung,CT Scan
+P00068,4,Liver,CT Scan
+P00069,1,Brain,Ultrasound
+P00069,2,Bone,CT Scan
+P00070,1,Bone,MRI
+P00070,2,Bone,CT Scan
+P00070,3,Lung,CT Scan
+P00070,4,Liver,MRI
+P00070,5,Bone,CT Scan
+P00071,1,Liver,CT Scan
+P00071,2,Liver,CT Scan
+P00072,1,Liver,CT Scan
+P00072,2,Bone,Ultrasound
+P00073,1,Lung,Ultrasound
+P00073,2,Lung,MRI
+P00074,1,Liver,Ultrasound
+P00074,2,Bone,CT Scan
+P00074,3,Bone,MRI
+P00074,4,Brain,Ultrasound
+P00075,1,Brain,Ultrasound
+P00075,2,Liver,CT Scan
+P00075,3,Liver,CT Scan
+P00076,1,Brain,CT Scan
+P00077,1,Brain,Ultrasound
+P00077,2,Lung,MRI
+P00077,3,Brain,CT Scan
+P00077,4,Bone,MRI
+P00077,5,Liver,MRI
+P00078,1,Brain,Ultrasound
+P00078,2,Brain,MRI
+P00078,3,Brain,MRI
+P00079,1,Bone,Ultrasound
+P00080,1,Liver,Ultrasound
+P00080,2,Bone,CT Scan
+P00080,3,Lung,MRI
+P00081,1,Lung,MRI
+P00081,2,Bone,MRI
+P00081,3,Lung,CT Scan
+P00082,1,Bone,Ultrasound
+P00082,2,Lung,CT Scan
+P00083,1,Liver,Ultrasound
+P00083,2,Brain,CT Scan
+P00083,3,Brain,MRI
+P00083,4,Bone,MRI
+P00084,1,Brain,Ultrasound
+P00084,2,Liver,Ultrasound
+P00084,3,Liver,Ultrasound
+P00084,4,Bone,CT Scan
+P00084,5,Brain,CT Scan
+P00085,1,Lung,Ultrasound
+P00085,2,Liver,Ultrasound
+P00085,3,Liver,CT Scan
+P00085,4,Brain,Ultrasound
+P00086,1,Lung,Ultrasound
+P00087,1,Liver,MRI
+P00087,2,Brain,Ultrasound
+P00088,1,Lung,Ultrasound
+P00088,2,Lung,CT Scan
+P00088,3,Bone,MRI
+P00088,4,Lung,MRI
+P00088,5,Brain,Ultrasound
+P00089,1,Liver,Ultrasound
+P00089,2,Bone,MRI
+P00089,3,Lung,MRI
+P00089,4,Liver,CT Scan
+P00089,5,Brain,CT Scan
+P00090,1,Bone,Ultrasound
+P00090,2,Liver,Ultrasound
+P00090,3,Lung,MRI
+P00091,1,Bone,Ultrasound
+P00091,2,Brain,MRI
+P00091,3,Lung,CT Scan
+P00091,4,Bone,MRI
+P00092,1,Brain,CT Scan
+P00092,2,Liver,CT Scan
+P00093,1,Bone,CT Scan
+P00094,1,Bone,MRI
+P00094,2,Bone,MRI
+P00094,3,Bone,Ultrasound
+P00095,1,Bone,CT Scan
+P00095,2,Lung,CT Scan
+P00096,1,Bone,MRI
+P00096,2,Brain,MRI
+P00097,1,Liver,Ultrasound
+P00097,2,Liver,Ultrasound
+P00097,3,Bone,Ultrasound
+P00098,1,Bone,Ultrasound
+P00098,2,Liver,MRI
+P00099,1,Brain,Ultrasound
+P00099,2,Lung,Ultrasound
+P00099,3,Bone,CT Scan
+P00099,4,Lung,CT Scan
+P00099,5,Brain,MRI
+P00100,1,Liver,Ultrasound
+P00100,2,Brain,Ultrasound
+P00100,3,Brain,Ultrasound
+P00100,4,Liver,Ultrasound

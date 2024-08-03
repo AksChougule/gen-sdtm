@@ -8,12 +8,6 @@ import numpy as np
 import random
 from datetime import datetime, timedelta
 
-
-def generate_dates(start_date, num_days, num_dates):
-    dates = [start_date + timedelta(days=random.randint(0, num_days)) for _ in range(num_dates)]
-    return dates
-
-
 def get_demographics(num_patients):
 	"""
 	Create a fake CDISC SDTM dataset for demographics.
@@ -145,26 +139,26 @@ def get_exposure(num_patients):
 
 
 def get_lab_analytes(num_patients, num_visits):
-    """
-    Create a fake CDISC SDTM dataset for lab analytes.
+	"""
+	Create a fake CDISC SDTM dataset for lab analytes.
 
-    Parameters:
-    num_patients (int): The number of patients.
-    num_visits_per_patient (int): The number of visits per patient.
+	Parameters:
+	num_patients (int): The number of patients.
+	num_visits_per_patient (int): The number of visits per patient.
 
-    Returns:
-    pd.DataFrame: A dataframe with lab analytes data.
-    """
-    # Constants for the dataset
-    analytes = ['Hemoglobin', 'Cholesterol', 'Glucose', 'Calcium', 'Potassium']
-    units = ['g/dL', 'mg/dL', 'mg/dL', 'mg/dL', 'mmol/L']
+	Returns:
+	pd.DataFrame: A dataframe with lab analytes data.
+	"""
+	# Constants for the dataset
+	analytes = ['Hemoglobin', 'Cholesterol', 'Glucose', 'Calcium', 'Potassium']
+	units = ['g/dL', 'mg/dL', 'mg/dL', 'mg/dL', 'mmol/L']
 
-    # Generating data
-    data = {'PATID': [], 'LBTEST': [], 'LBSTRESU': [], 'LBSTRESN': [], 'LBORRES': [], 'VISITNUM': [], 'VISIT': []}
+	# Generating data
+	data = {'PATID': [], 'LBTEST': [], 'LBSTRESU': [], 'LBSTRESN': [], 'LBORRES': [], 'VISITNUM': [], 'VISIT': []}
 
-    for i in range(1, num_patients + 1):
-            pat_id = f'P{str(i).zfill(5)}'
-            for visit_num in range(1, num_visits + 1):
+	for i in range(1, num_patients + 1):
+    	    pat_id = f'P{str(i).zfill(5)}'
+    	    for visit_num in range(1, num_visits + 1):
                 for analyte, unit in zip(analytes, units):
                     data['PATID'].append(pat_id)
                     data['LBTEST'].append(analyte)
@@ -173,11 +167,11 @@ def get_lab_analytes(num_patients, num_visits):
                     data['LBORRES'].append(f'{random.uniform(0, 10):.2f}')  # Random result in string format
                     data['VISITNUM'].append(visit_num)
                     data['VISIT'].append(f'Visit {visit_num}')
-    # Creating DataFrame
-                    
-    LB = pd.DataFrame(data)
 
-    return LB
+	# Creating DataFrame
+	LB = pd.DataFrame(data)
+
+	return LB
 
 
 
@@ -229,7 +223,8 @@ def get_adverse_events(num_patients):
 
     return AE
 
-#region RS - Response data
+
+
 
 def get_response(num_patients):
     """
@@ -261,91 +256,13 @@ def get_response(num_patients):
     return RS
 
 
-#endregion
-
-def get_response(num_patients):
+def save_sdtm_data(num_patients, num_visits=5):
     """
-    Create a fake CDISC SDTM dataset for response to treatment.
-
-    Parameters:
-    num_patients (int): The number of patients.
-
-    Returns:
-    pd.DataFrame: A dataframe with response data.
-    """
-    rs_data = []
-    for i in range(1, num_patients + 1):
-        patient_id = f"P{i:05d}"
-        for visit in range(1, 6):  # Assuming 5 visits per patient
-            date = generate_dates(datetime(2023, 1, 1), 365, 1)[0]
-            rs_data.append({
-                "USUBJID": patient_id,
-                "RSSEQ": visit,
-                "RSDTC": date.strftime("%Y-%m-%d"),
-                "RSDY": (date - datetime(2023, 1, 1)).days,
-                "RSORRES": random.choice(["CR", "PR", "SD", "PD"]),
-                "RSSTRESC": random.choice(["Complete Response", "Partial Response", "Stable Disease", "Progressive Disease"]),
-            })
-    return pd.DataFrame(rs_data)
-
-def get_tumor_identification(num_patients):
-    tu_data = []
-    for i in range(1, num_patients + 1):
-        patient_id = f"P{i:05d}"
-        num_tumors = random.randint(1, 5)  # Each patient can have 1 to 5 tumors
-        for tumor in range(1, num_tumors + 1):
-            tu_data.append({
-                "USUBJID": patient_id,
-                "TUSEQ": tumor,
-                "TULOC": random.choice(["Lung", "Liver", "Brain", "Bone"]),
-                "TUMETHOD": random.choice(["CT Scan", "MRI", "Ultrasound"]),
-            })
-    return pd.DataFrame(tu_data)
-
-def get_tumor_results(num_patients):
-    tr_data = []
-    for i in range(1, num_patients + 1):
-        patient_id = f"P{i:05d}"
-        num_tumors = random.randint(1, 5)  # Each patient can have 1 to 5 tumors
-        for tumor in range(1, num_tumors + 1):
-            for visit in range(1, 6):  # Assuming 5 visits per patient
-                date = generate_dates(datetime(2023, 1, 1), 365, 1)[0]
-                tr_data.append({
-                    "USUBJID": patient_id,
-                    "TRSEQ": visit,
-                    "TRDTC": date.strftime("%Y-%m-%d"),
-                    "TRDY": (date - datetime(2023, 1, 1)).days,
-                    "TRLINKID": f"TUMOR{tumor:03d}",
-                    "TRORRES": random.uniform(0.5, 10.0),  # Tumor size in cm
-                    "TRSTRESC": random.uniform(0.5, 10.0),  # Tumor size in cm (standardized)
-                })
-    return pd.DataFrame(tr_data)
-
-def generate_sdtm_data(num_patients):
-    rs_df = get_response(num_patients)
-    tu_df = get_tumor_identification(num_patients)
-    tr_df = get_tumor_results(num_patients)
-    
-    rs_df.to_csv("RS.csv", index=False)
-    tu_df.to_csv("TU.csv", index=False)
-    tr_df.to_csv("TR.csv", index=False)
-    
-    print("SDTM data files generated: RS.csv, TU.csv, TR.csv")
-
-# Specify the number of patients
-num_patients = 100
-generate_sdtm_data(num_patients)
-
-
-
-def save_sdtm_data(num_patients, num_visits=5, therapeutic_area=None):
-    """
-    Create and save low-fidelity synthetic CDISC SDTM dataset for 9 common domains.
+    Create and save low-fidelity synthetic CDISC SDTM dataset for 7 common domains.
 
     Parameters:
     num_patients (int): The number of patients.
     num_rows (int): The number of visits per patient
-    therapeutic_area (text): Disease Segment (e.g. therapeutic_area = 'oncology')
 
     Returns:
     NA
@@ -374,24 +291,18 @@ def save_sdtm_data(num_patients, num_visits=5, therapeutic_area=None):
     vs = get_vital_signs(num_patients, num_visits)
     vs.to_csv("vs.csv")
 
-    if therapeutic_area=='oncology':
-        rs_df = get_response(num_patients)
-        tu_df = get_tumor_identification(num_patients)
-        tr_df = get_tumor_results(num_patients)
-        
-        rs_df.to_csv("rs.csv", index=False)
-        tu_df.to_csv("tu.csv", index=False)
-        tr_df.to_csv("tr.csv", index=False)
+    # create response data
+    rs = get_response(num_patients)
+    rs.to_csv("rs.csv")
 
 
-def get_sdtm_data(num_patients, num_visits=5, therapeutic_area=None):
+def get_sdtm_data(num_patients, num_visits=5):
     """
-    Create a fake CDISC SDTM dataset for 9 common domains.
+    Create a fake CDISC SDTM dataset for 7 common domains.
 
     Parameters:
     num_patients (int): The number of patients.
     num_rows (int): The number of visits per patient
-    therapeutic_area (text): Disease Segment (e.g. therapeutic_area = 'oncology')
    
     Returns:
     Dictionary of pandas df, each df is associated with a domain
@@ -414,14 +325,8 @@ def get_sdtm_data(num_patients, num_visits=5, therapeutic_area=None):
     # create vital signs
     vs = get_vital_signs(num_patients, num_visits)
 
-    if therapeutic_area=='oncology':
-        rs = get_response(num_patients)
-        tu = get_tumor_identification(num_patients)
-        tr = get_tumor_results(num_patients)
+    # create response data
+    rs = get_response(num_patients)
     
-        data = {'ae':ae,'cm':cm,'dm':dm,'ex':ex,'lb':lb,'vs':vs,'rs':rs,'tu':tu,'tr':tr}
-        return data
-    
-    if therapeutic_area==None:
-        data = {'ae':ae,'cm':cm,'dm':dm,'ex':ex,'lb':lb,'vs':vs}
-        return data
+    data = {'ae':ae,'cm':cm,'dm':dm,'ex':ex,'lb':lb,'vs':vs,'rs':rs}
+    return data

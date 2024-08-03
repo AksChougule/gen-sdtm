@@ -1,0 +1,12 @@
+MANIFEST.in
+README.md
+pyproject.toml
+setup.py
+/home/ubuntu/codebase/my_github/gen-sdtm/pip-wheel-metadata/ssdtm.egg-info/PKG-INFO
+/home/ubuntu/codebase/my_github/gen-sdtm/pip-wheel-metadata/ssdtm.egg-info/SOURCES.txt
+/home/ubuntu/codebase/my_github/gen-sdtm/pip-wheel-metadata/ssdtm.egg-info/dependency_links.txt
+/home/ubuntu/codebase/my_github/gen-sdtm/pip-wheel-metadata/ssdtm.egg-info/requires.txt
+/home/ubuntu/codebase/my_github/gen-sdtm/pip-wheel-metadata/ssdtm.egg-info/top_level.txt
+ssdtm/__init__.py
+ssdtm/__main__.py
+ssdtm/cli.py
